@@ -1,0 +1,377 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #191970  repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0000FF;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.top-banner span {
+  color: rgb(0, 255, 94);
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #222222;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+  z-index: 1001;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  background-color: #191970;
+  padding: 160px 20px 120px;
+  margin-top: 40px;
+}
+
+header h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(55, 0, 255, 0.7);
+}
+
+header p {
+  font-size: 26px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.metricas {
+  background-color: #4169E1;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.metrica {
+  background: #8f8f8f;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 250px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.metrica:hover {
+  transform: scale(1.05);
+}
+
+.metrica h3 {
+  font-size: 38px;
+  color: #2a0a0a;
+}
+
+.metrica p {
+  margin-top: 10px;
+  color: #2a0a0a;
+  font-size: 17px;
+}
+
+.preco-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 80px auto;
+  flex-wrap: wrap;
+}
+
+.preco-img {
+  width: 450px;
+  height: 280px;
+  object-fit: contain;
+  background-color: #000;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 13, 255, 0.5);
+}
+
+
+.preco {
+  background: #2a0a0a;
+  padding: 60px 40px;
+  border-radius: 24px;
+  max-width: 600px;
+  box-shadow: 0 0 30px rgba(0, 85, 255, 0.6);
+}
+
+.preco h2 {
+  background-color: rgb(0, 21, 255);
+  color: white;
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.preco .antigo {
+  text-decoration: line-through;
+  color: gray;
+  margin: 12px 0;
+}
+
+.preco .valor {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.preco .parcelado {
+  color: #ccc;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.preco .economia {
+  color: #00ff00;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.preco a.botao {
+  background-color: #00ff88;
+  color: black;
+  padding: 20px 28px;
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.preco a.botao:hover {
+  background-color: #00cc66;
+}
+
+.preco .garantia {
+  font-size: 16px;
+  margin-top: 12px;
+  color: #ccc;
+}
+
+.carrossel {
+  background-color: rgba(25,25,112);
+  padding: 50px 20px;
+}
+
+.carrossel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding-bottom: 12px;
+}
+
+.carrossel-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrossel-container::-webkit-scrollbar-thumb {
+  background: #e1ff00;
+  border-radius: 10px;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  background: #262626;
+  border-radius: 12px;
+  padding: 14px;
+  color: white;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #ffe600; /* ou a cor do fundo desejado */
+  display: block;
+  margin: auto;
+
+}
+
+
+.slide p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.slide:hover {
+  transform: scale(1.05);
+}
+
+.resultados {
+  padding: 80px 20px;
+  background-color: rgb(65,105,225);
+}
+
+.duvidas {
+  padding: 80px 20px;
+  background-color: #191970;
+}
+
+.garantia {
+  padding: 80px 20px;
+  background-color: #003322;
+}
+
+.botao-final {
+  padding: 40px 20px;
+  background-color: #191970;
+  text-align: center;
+}
+
+.titulo-amarelo {
+  font-size: 36px;
+  color: #ffcc00;
+  margin-bottom: 40px;
+  text-shadow: 0 0 12px #ffcc00;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-feedback {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 300px;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+}
+
+.card-feedback h3 {
+  font-size: 20px;
+  color: #00ffcc;
+}
+
+.card-feedback p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.card-duvida {
+  background-color: #262626;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 280px;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.card-duvida h4 {
+  color: #4169E1	;
+}
+
+.card-duvida p {
+  margin-top: 10px;
+}
+
+.garantia-box {
+  background-color: #004d3f;
+  border-radius: 24px;
+  padding: 40px 30px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  text-align: center;
+}
+
+.garantia-box h2 {
+  color: #00ff88;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.garantia-box p {
+  color: white;
+  font-size: 18px;
+}
+
+.botao-destaque {
+  background-color: #00ff88;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 32px;
+  text-decoration: none;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.botao-destaque:hover {
+  background-color: #00cc66;
+}
+
+
+footer {
+  background-color: #111;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+footer .info {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #00ffcc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffcc00;
+}
